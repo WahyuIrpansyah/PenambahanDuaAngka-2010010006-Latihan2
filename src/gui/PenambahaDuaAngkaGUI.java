@@ -144,6 +144,11 @@ public class PenambahaDuaAngkaGUI extends javax.swing.JFrame {
         hapusbtn.setText("Hapus");
 
         keluarbtn.setText("Keluar");
+        keluarbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                keluarbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -221,6 +226,11 @@ public class PenambahaDuaAngkaGUI extends javax.swing.JFrame {
     private void hasilTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilTFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hasilTFActionPerformed
+
+    private void keluarbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarbtnActionPerformed
+        // TODO add your handling code here:
+          System.exit(0);
+    }//GEN-LAST:event_keluarbtnActionPerformed
 
     /**
      * @param args the command line arguments
