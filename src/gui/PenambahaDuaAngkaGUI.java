@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ACER
@@ -205,6 +207,15 @@ public class PenambahaDuaAngkaGUI extends javax.swing.JFrame {
 
     private void tambahbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahbtnActionPerformed
         // TODO add your handling code here:
+        if(angkapertamaTF.getText().equals("") || angkakeduaTF.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Salah satu input tidak boleh kosong");
+       } else {
+           int angkapertama = Integer.valueOf(angkapertamaTF.getText());
+            int angkakedua = Integer.valueOf(angkakeduaTF.getText());
+            int hasil = angkapertama + angkakedua;
+            hasilTF.setText(Integer.toString(hasil));
+
+        }
     }//GEN-LAST:event_tambahbtnActionPerformed
 
     private void hasilTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasilTFActionPerformed
